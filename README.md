@@ -2,4 +2,4 @@
 
 This is my first Python repository. Welcome to my MA_Python bar...
 </br>
-Author - Masum Ahmed in(MediVix).
+Author - Masum Ahmed(MediVix).
