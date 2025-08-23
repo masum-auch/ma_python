@@ -46,7 +46,20 @@
 # print("The average Number is : ", (first+second)/2)
 
 ##Q-04 = answer:
-a = int(input("enter number 1st: "))
-b = int(input("enter 2nd number: "))
-print(a >= b)
+# a = int(input("enter number 1st: "))
+# b = int(input("enter 2nd number: "))
+# print(a >= b)
 
+def binary_search(arr, x):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == x:
+            return mid
+        elif arr[mid] < x:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+# Example
+print(binary_search([1,2,3,4,5], 4))  # Output: 3
