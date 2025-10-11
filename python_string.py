@@ -94,7 +94,7 @@ def analyze_text(text):
         'avg_word_length': round(characters / len(words), 2) if words else 0
     }
 
-sample = "Hello world. This is Python!"
+sample = "Hello world. This is a Python!"
 print(analyze_text(sample)) 
 
 
