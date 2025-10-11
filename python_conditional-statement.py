@@ -108,18 +108,54 @@ if(age >= 18):
 ##question
 #write a program to check if a number is a multiple of 7 or not?
 #answer
-x = int(input("Enter your random number: "))
-if(x % 7 == 0): 
-    print(f"{x} the multiple of 7")
-else:
-    print(f"{x} not a multiple")
+# x = int(input("Enter your random number: "))
+# if(x % 7 == 0): 
+#     print(f"{x} the multiple of 7")
+# else:
+#     print(f"{x} not a multiple")
 
-age = 20
-if age >= 18:
-    print("You are an adult.") 
+# age = 20
+# if age >= 18:
+#     print("You are an adult.") 
 
-age = 16
-if age >= 18:
-    print("You are an adult.")
-else:
-    print("You are a minor.")
+# age = 16
+# if age >= 18:
+#     print("You are an adult.")
+# else:
+#     print("You are a minor.")
+
+# 🧮 Simple Calculator Program
+# Created for Captain Masum 🚀
+
+def simple_calculator():
+    print("=== Simple Calculator ===")
+
+    # User input
+    num1 = float(input("Enter first number: "))
+    op = input("Enter operator (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
+
+    # Perform calculation
+    if op == '+':
+        result = num1 + num2
+    elif op == '-':
+        result = num1 - num2
+    elif op == '*':
+        result = num1 * num2
+    elif op == '/':
+        if num2 != 0:   # Nested check to prevent zero division
+            result = num1 / num2
+        else:
+            result = "Error: Division by zero!"
+    else:
+        result = "Error: Invalid operator!"
+
+    # Output formatting using ternary
+    status = "Success" if isinstance(result, (int, float)) else "Error"
+    print(f"Result: {result} ({status})")
+
+
+# Run the calculator
+simple_calculator() 
+
+
