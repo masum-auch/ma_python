@@ -113,3 +113,13 @@ if(x % 7 == 0):
     print(f"{x} the multiple of 7")
 else:
     print(f"{x} not a multiple")
+
+age = 20
+if age >= 18:
+    print("You are an adult.") 
+
+age = 16
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
