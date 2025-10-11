@@ -168,6 +168,8 @@ print(5 > 3)  # True
 b = b"Hello"
 print(type(b))  # <class 'bytes'>
 
+#bytearry
+
 #8. None Type - NoneType(Represents absence of a value.)
 x = None
 print(type(x))  # <class 'NoneType'>
