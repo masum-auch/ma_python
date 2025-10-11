@@ -58,13 +58,43 @@
 # print("The character '$' occurred", count, "times.")
 
 
-text = input("Enter a string: ")
-count = 0
+# text = input("Enter a string: ")
+# count = 0
 
-for char in text:
-    if char.isdigit():
-        count += 1
+# for char in text:
+#     if char.isdigit():
+#         count += 1
 
-print("Number of digits in the string:", count)     
+# print("Number of digits in the string:", count)   
+
+# 1. Password strength checker
+def check_password_strength(password):
+    if len(password) < 8:
+        return "Weak: Password too short"
+    elif password.isalpha():
+        return "Weak: Only letters"
+    elif password.isdigit():
+        return "Weak: Only numbers"
+    else:
+        return "Strong: Good password"
+
+print(check_password_strength("abc123"))    # Weak
+print(check_password_strength("StrongPass123"))  # Strong
+
+# 2. Text analyzer
+def analyze_text(text):
+    words = text.split()
+    characters = len(text)
+    sentences = text.count('.') + text.count('!') + text.count('?')
+    
+    return {
+        'words': len(words),
+        'characters': characters,
+        'sentences': sentences,
+        'avg_word_length': round(characters / len(words), 2) if words else 0
+    }
+
+sample = "Hello world. This is Python!"
+print(analyze_text(sample))
 
 
