@@ -63,3 +63,6 @@ def binary_search(arr, x):
     return -1
 # Example
 print(binary_search([1,2,3,4,5], 4))  # Output: 3
+
+name = "Masum Khan"
+print(name)
