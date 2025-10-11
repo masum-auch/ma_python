@@ -65,4 +65,6 @@ for char in text:
     if char.isdigit():
         count += 1
 
-print("Number of digits in the string:", count)   
+print("Number of digits in the string:", count)     
+
+
