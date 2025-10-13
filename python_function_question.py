@@ -41,6 +41,38 @@ def cal_fact(n):
     print(f"The factorial of {n} is {fact}")
 
 cal_fact(8)
+
+##question
+#5. write a recursive function to calculate the sum of frist n natural number.
+#6. write a recursive function to print all element in a list.(Hint: use list & index as parameters)
+
+##question_05
+def calcu_sum(n):
+    if(n == 0):
+        return 0
+    return calcu_sum(n - 1) - n
+sum = calcu_sum(5)
+print(sum)
+
+# calcu_sum(1) কল হয়:
+#     if n == 0? → NO
+#     return calcu_sum(0) + 1   ← এখানে n=1
+#         ↓
+#         calcu_sum(0) কল হয়:
+#             if n == 0? → YES
+#             return 0
+#         ↓
+#     calcu_sum(1) = 0 + 1 = 1  ← এখানে n=1 আসলেই ছিল!  ##just practice opportunities
+
+##question_06
+def print_list(list, idx = 0):
+    if(idx == len(idx)):
+        return
+    print(list[idx])
+    print_list(list, idx + 1)
+
+frutis = ["mango", "litchi", "apple", "banana"]
+print(frutis)
  
 
 
