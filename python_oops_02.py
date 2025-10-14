@@ -32,7 +32,7 @@ class Student9:
         return f"Your marks: {self.marks}"
 
 
-S12 = Student9("Tuhin", 88)
+S12 = Student9("Tuhin", 68)
 print(S12.coll_name)
 print(S12.Welcome())
 print(S12.get_marks())   
