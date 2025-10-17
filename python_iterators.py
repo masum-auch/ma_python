@@ -55,33 +55,72 @@
 
 
 
-class mera_range:
-    def __init__(self, start, end):
-        self.start = start
-        self.end = end
+# class mera_range:
+#     def __init__(self, start, end):
+#         self.start = start
+#         self.end = end
 
-    def __iter__(self):
-        return mera_range_iter(self)
+#     def __iter__(self):
+#         return mera_range_iter(self)
 
-class mera_range_iter:
-    def __init__(self,itertor_obj):
-        self.iterable = itertor_obj
+# class mera_range_iter:
+#     def __init__(self,itertor_obj):
+#         self.iterable = itertor_obj
 
-    def __iter__(self):
-        return self
+#     def __iter__(self):
+#         return self
 
-    def __next__(self):
+#     def __next__(self):
 
-        if self.iterable.start >= self.iterable.end:
-            raise StopIteration
+#         if self.iterable.start >= self.iterable.end:
+#             raise StopIteration
         
-        current = self.iterable.start
-        self.iterable.start += 1
+#         current = self.iterable.start
+#         self.iterable.start += 1
 
-        return current
+#         return current
     
-x = mera_range(1, 11)
-print(iter(x))
+# x = mera_range(1, 11)
+# print(iter(x))
+
+
+#Generator of python
+
+# def gen_demo():
+    
+#     yield "Frist Statement"
+#     yield "Second Statement"
+#     yield "third Statement"
+
+# gen = gen_demo()
+
+# for i in gen:
+#     print(i)
+
+
+# def squre(num):
+
+#     for i in range(1, num + 1):
+#         yield i*2
+
+# gen = squre(10)
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+
+# for d in gen:
+#     print(d)
+
+
+def mere_range(start, end):
+
+    for i in range(start, end):
+        yield i
+
+
+for d in mere_range(15, 26):
+    print(d)
+
         
 
         
