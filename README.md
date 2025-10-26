@@ -1,5 +1,6 @@
 # ma_python
 
-This is my first Python repository. Welcome to my MA_Python bar...
-</br>
-Author - Masum Ahmed(MediVix).
+I have fully completed my Python learning and gained strong programming fundamentals.
+I am now focusing on developing real-world projects and improving my problem-solving skills through consistent practice.
+
+Author - Masum Ahmed.
