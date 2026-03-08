@@ -1,1 +1,1 @@
-Python For Machine Learnings | ML | AI
+Python For Machine Learning | ML | AI
